@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android Google SignIn Demo</string>
+    <string name="default_sign_in_button">Default Sign In Button</string>
+    <string name="custom_sign_in_button">Custom Sign In Button</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_out">Sign Out</string>
+</resources>

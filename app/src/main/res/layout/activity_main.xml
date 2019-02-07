@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.android_google_sign_in_demo.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_sign_in_button"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <!-- add default google sign in button
+    type of button size : icon_only, wide and standard -->
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/default_google_sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:buttonSize="wide" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/custom_sign_in_button"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <!-- custom google sign in button -->
+    <Button
+        android:id="@+id/custom_sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:onClick="customGoogleSignIn"
+        android:text="@string/sign_in"
+        android:textColor="@android:color/white" />
+
+    <!-- image view to show user profile image -->
+    <ImageView
+        android:id="@+id/user_profile_image_view"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <!-- text view to show user details -->
+    <TextView
+        android:id="@+id/user_details_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+</LinearLayout>
